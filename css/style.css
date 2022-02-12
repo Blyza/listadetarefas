@@ -1,0 +1,168 @@
+@import url('http://fonts.cdnfonts.com/css/amazing-grotesk-900');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: rgb(168,81,129);
+font-family: 'Amazing Grotesk', sans-serif;
+}
+
+li {
+    display: flex;
+    max-width: 90%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Amazing Grotesk', sans-serif;
+    font-weight: 600;
+    padding: 2px;
+
+}
+
+.principal {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.tarefa_container {
+    background-color: rgb(249, 237, 114);
+    text-align: center;
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 30rem;
+    padding: 0 0 32px 0;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+.tarefa_titulo {
+text-align: center;
+margin: 40px auto 32px;
+display: inline-block;
+font-size: 24px;
+color: rgb(168,81,129);
+}
+
+.formulario {
+    justify-content: center;
+    display: flex;
+}
+
+#tarefaInput {
+    width: 75%;
+    padding: 24px;
+    height: 60px;
+    background-color: rgb(246, 151, 110);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-right: 3%;
+}
+
+#tarefaInput:focus {
+    color: rgb(0, 0, 0);
+}
+
+#tarefaInput::placeholder{
+    color: snow;
+    font-family: 'Amazing Grotesk', sans-serif;
+    font-weight: 500;
+    
+}
+
+.tarefa_botao{
+    background-color: rgb(168,81,129);
+    color: snow;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.tarefa_botao:hover {
+    box-shadow: 2px 2px 4px black;
+    width: 36px;
+    height: 36px;
+    transition: .3s;
+}
+
+.container_botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marcar_todos {
+    border: 1px solid ;
+    background-color: rgb(241,110,117);
+    border-radius: 8px;
+    color:rgb(249, 237, 114);
+    padding: 9px 12px;
+    margin: 16px 0 0 0px;
+    transition: .3s;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 75%;
+}
+
+.marcar_todos:hover {
+    background-color: rgb(246, 151, 110);
+}
+
+.remover_todos {
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(241,110,117);
+    color:rgb(249, 237, 114);
+    padding: 9px 12px;
+    margin: 16px 0 0 0;
+    transition: .3s;
+}
+
+.remover_todos:hover {
+    background-color: rgb(246, 151, 110);
+}
+
+#todoTarefa {
+    background-color: seashell;
+    margin: auto;
+    margin-top: 12px;
+    width: 85%;
+    border-radius: 8px;
+    opacity: 80%;
+
+}
+
+#todoTarefa:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+.containerIcons {
+    width: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.check, .remove {
+    width: 1.5rem;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <!-- aqui é o conteúdo principal -->
+    <main class="principal">
+      <div class="tarefa_container">
+        <h1 class="tarefa_titulo">Lista de Tarefas</h1>
+        <form class="formulario" id="formulario">
+          <input
+            type="text"
+            name="tarefa"
+            id="tarefaInput"
+            placeholder="Nova Tarefa"
+            autofocus
+          />
+          <button type="submit" class="tarefa_botao" id="tarefaBotao" onclick="adicionarNovaTarefa()">+</button>
+        </form>
+        <!-- Mensagem de Erro -->
+        <div>
+          <p id="mensagem"></p>
+        </div>
+        <!-- Lista de Tarefas Adicionadas -->
+        <div class="tarefa" id="todoTarefa">
+          <ul class="lista_de_tarefas" id="listaDeTarefas"></ul>
+        </div>
+        <!-- Ações da Lista de Tarefas -->
+        <div class="container_botoes">
+          <button class="marcar_todos" id="marcarTodos">Marcar Todas</button>
+          <button class="remover_todos" id="removerTodos">Limpar Lista</button>
+        </div>
+      </div>
+    </main>
+    <script src="listaDeTarefas.js"></script>
+  </body>
+</html>
